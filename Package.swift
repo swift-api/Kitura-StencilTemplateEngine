@@ -18,8 +18,9 @@ import PackageDescription
 
 let package = Package(
     name: "KituraStencil",
-    dependencies: [.Package(url: "https://github.com/IBM-Swift/Kitura-TemplateEngine.git",
-                            versions: Version(0,0,0)..<Version(0,1,0)),
-                     .Package(url: "https://github.com/kylef/Stencil",
-                              majorVersion: 0)])
+    dependencies: [
+        .Package(url: "https://github.com/IBM-Swift/Kitura-TemplateEngine.git", majorVersion: 0, minor: 16),
+        .Package(url: "https://github.com/kylef/Stencil", majorVersion: 0)
+    ]
+)
 
